@@ -1,0 +1,13 @@
+course = {
+    name: "helo1",
+    courseInstructor:"kalesh"
+}
+
+// console.log(course.courseInstructor)
+
+
+
+///_-----> destructure
+const {courseInstructor: IC} = course
+
+console.log(IC)

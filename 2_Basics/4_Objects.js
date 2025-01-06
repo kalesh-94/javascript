@@ -18,9 +18,28 @@
 
 
 
-obj1 = {1:"id", 2:"kalesh"} 
-obj2 = {3:"id2", 4:"name2"}
-// obj3 = {obj1, obj2}
-// console.log(obj3); /////__________________.>>>>>>object inside object problem creates hence>>>>>>>>>>>>
-obj3 = Object.assign({}, obj1, obj2)
-console.log(obj3);
+// obj1 = {1:"id", 2:"kalesh"} 
+// obj2 = {3:"id2", 4:"name2"}
+// // obj3 = {obj1, obj2}
+// // console.log(obj3); /////__________________.>>>>>>object inside object problem creates hence>>>>>>>>>>>>
+// obj3 = Object.assign({}, obj1, obj2)
+// console.log(obj3);
+
+
+
+
+tinderUser ={
+    id : "i1",
+    name : "kalesh",
+    login : true
+
+}
+
+console.log(Object.keys(tinderUser))
+console.log(Object.values(tinderUser))
+console.log(Object.entries(tinderUser));
+console.log(Object.hasOwnProperty("name"));
+
+
+
+
