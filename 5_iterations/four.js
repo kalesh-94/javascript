@@ -6,3 +6,4 @@ const mynums = Codingnums.filter((num)=>num>5)
                                             //// this is called as chaining (function chaining)
 console.log(mynums);
 
+
