@@ -1,5 +1,5 @@
 # javascript
-
-'''python
-print('Hello')
+javascript
+'''
+colsole.log('Hello')
 '''
