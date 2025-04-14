@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    
+    <ul class="lang"> 
+        <li>Python</li>
+    </ul>
+
+</body>
+<script>
+// -------------create Element ----------------
+
+    // const li = document.createElement("li")
+    // li.style.color = 'white'
+    // li.innerHTML = "Javascript"
+
+    // document.querySelector(".lang").appendChild(li)
+
+
+    function createnewelem(newlang) {
+        const li = document.createElement("li");
+        li.innerHTML = `${newlang}`;
+        document.querySelector(".lang").appendChild(li)
+    }
+
+    createnewelem("javascript")
+    createnewelem("java")
+    createnewelem("TypeJS")
+    createnewelem("Ruby")
+    
+    // .....................>>>>>>>>>>>>This is optimized way by createTextNode
+    function optiadd(langname) {
+        const li = document.createElement("li")
+        
+        li.appendChild(document.createTextNode(langname))            
+        document.querySelector(".lang").appendChild(li)
+    }
+
+    optiadd("C#")
+    optiadd("C++")
+
+
+
+
+    // ..-----------------Edit elem -----------------
+
+    const secondli = document.querySelector("li:nth-child(2)")
+    secondli.innerHTML = "maja maro kya language sik rahe ho"
+
+
+    const firstli = document.querySelector("li:first-child")
+    firstli.outerHTML = "<li>Java</li>"
+
+    //---------remove---------
+
+    const lastli = document.querySelector("li:last-child")
+    lastli.remove()
+
+
+</script>
+
+</html>

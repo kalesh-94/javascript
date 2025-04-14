@@ -1,0 +1,35 @@
+body {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.main {
+    display: flex;
+
+}
+
+#gray {
+    background-color: gray;
+}
+#black {
+    background-color: black;
+    border: 2px solid white;
+}
+#green {
+    background-color: green;
+}
+.button {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}
