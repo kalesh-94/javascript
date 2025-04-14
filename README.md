@@ -1,1 +1,5 @@
 # javascript
+
+'''python
+print('Hello')
+'''
