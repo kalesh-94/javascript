@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+    }
+    li>img{
+        height: 150px;
+        width: 150px;
+    }
+</style>
+<body>
+    <ul>
+        <li id="images"><img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="" id="sparrow"></li>
+
+        <li id="images"><img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" id="photo"></li>
+
+        <li id="images"><img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></li>
+     
+    </ul>
+</body>
+<script>
+    const sparrow = document.getElementById("sparrow")
+
+    sparrow.addEventListener("click", function(){
+        console.log("Sparrow is clicked")
+    }, false)
+
+    const images = document.getElementById("images").addEventListener("click", function(){
+        console.log("Image is clicked")
+    }, false)
+</script>
+</html>
