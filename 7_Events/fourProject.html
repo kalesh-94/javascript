@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 10px;
+        border-radius: 5px solid black;
+        color: black;
+        
+    }
+</style>
+<body>
+
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const start  = document.querySelector("#start");
+    const stop = document.querySelector("#stop");
+    let setid;
+
+
+    function randomcolor(){
+        const hex = "0123456789ABCDEF";
+        color = "#";
+        for(let i =1; i<=6; i++){
+            color += hex[Math.floor(Math.random() *16)];
+            
+        }
+        console.log(color)
+        return color;
+    }
+   
+  
+
+    startchange = function () {
+        document.body.style.backgroundColor = randomcolor();
+    };
+
+    stopchange = function () {
+        clearInterval(setid);
+        document.body.style.backgroundColor = "white";
+        
+    };
+
+    start.addEventListener("click",function(){
+        setid = setInterval(startchange,500)
+        
+    })
+
+    stop.addEventListener("click",function(){
+      stopchange();
+      console.log("Chnage is Stopped")
+    })
+    
+   
+</script>
+</html>
