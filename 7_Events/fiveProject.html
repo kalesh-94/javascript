@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    table{
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+    table>tr, table td{
+        border: 1px solid white;
+        border-collapse: collapse;
+        margin: 20px;
+    }
+</style>
+<body>
+
+    <div id = insert></div>
+</body>
+<script>
+ const insert = document.querySelector("#insert");
+
+ window.addEventListener("keydown", (e)=>{
+    insert.innerHTML = `
+    <div class="key"> 
+        <table>
+  <tr>
+    <th>Key</th>
+    <th>Key code</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " " ? "Space": e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+  <tr>
+   
+  </tr>
+</table>
+    </div>
+    `
+
+ })
+</script>
+</html>
