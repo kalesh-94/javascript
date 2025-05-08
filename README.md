@@ -1,5 +1,5 @@
 # javascript
 javascript
 ```
-colsole.log('Hello')
+console.log('Hello')
 ```
