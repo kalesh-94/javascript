@@ -22,13 +22,34 @@
     changeh1.style.color = "red"
     }
 
+    const Kalesh = function(str) {
+        console.log(str, Date.now())
 
-   const setstop =  setTimeout(changefunc, 2000)
+    }
 
-    document.querySelector("#stop").addEventListener("click", function(){
-        clearTimeout(setstop)
-        console.log("stopedddd")
+    setInterval(Kalesh, 1000, "Hiii");
+   const setstop = setTimeout(changefunc, 10000);
+
+    //document.querySelector("#stop").addEventListener("click", function(){
+        //clearTimeout(setstop)  ---------------this function clear the timeout
+      /// console.log("stopedddd")
+    //})
+
+
+    document.querySelector("#stop").addEventListener("click", function(e){
+      console.log(e.clientX, e.clientY);
+      console.log(e.screenX, e.screenY);
+
+
+       console.log("Alt pressed:", e.altKey);
+  console.log("Ctrl pressed:", e.ctrlKey);
+  console.log("Shift pressed:", e.shiftKey);
+  console.log(e.key);
     })
+
+
+
+
     
 
 </script>
