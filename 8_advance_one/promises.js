@@ -110,10 +110,15 @@ comsumeProSix()
 
 
 async function getAluser() {
-   try
+   try {
+     const apidata = await fetch("https://api.github.com/users/github");
+    const data = await apidata.json();
+    console.log(data);
+   } catch (error) {
+    error
+   }
     
 
 }
-
 getAluser()
 
