@@ -109,16 +109,27 @@ async function comsumeProSix() {
 comsumeProSix()
 
 
-async function getAluser() {
-   try {
-     const apidata = await fetch("https://api.github.com/users/github");
-    const data = await apidata.json();
-    console.log(data);
-   } catch (error) {
-    error
-   }
+// async function getAluser() {
+//    try {
+//      const apidata = await fetch("https://api.github.com/users/github");
+//     const data = await apidata.json();
+//     console.log(data);
+//    } catch (error) {
+//     error
+//    }
     
+// }
+// getAluser()
 
-}
-getAluser()
 
+fetch("https://api.github.com/users/github")
+.then((res)=>{
+    return res.json()
+})
+.then((data)=>{
+    console.log(data)
+})
+.catch((error)=>{
+    console.log(error);
+    
+})
