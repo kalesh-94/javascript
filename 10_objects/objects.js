@@ -26,6 +26,7 @@ Object.defineProperty(user, "name", {
 
 console.log(Object.getOwnPropertyDescriptor(user, "name"));
 
-for (const [key,value] of Object.entries(user)) { /////iterable on name will not work , only id and party will iterable
+for (const [key,value] of Object.entries(user)) {     /////------->
+// iterable on name will not work , only id and party will iterable
     console.log(`${key} and ${value}`);
 }
