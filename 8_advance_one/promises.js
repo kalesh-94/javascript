@@ -133,3 +133,4 @@ fetch("https://api.github.com/users/github")
     console.log(error);
     
 })
+.finally(()=> console.log("fetch and excecuted"))
