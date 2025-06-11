@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #313131;
+    }
+</style>
+<body>
+    
+</body>
+    <!-- <script>
+        //lexical scoping
+
+        function outer(){
+            const name = "Kalesh "
+
+            function inner1(){
+                console.log(name)
+                const name_of_inner1 = "inner1"
+            }
+            inner1()
+
+            function inner2(){
+                console.log(name_of_inner1)
+            }
+            inner2()
+        }
+        outer()
+        
+
+    </script> -->
+
+
+
+
+
+    <script>
+        /// Closure
+
+        function displayOuter(){
+            const name  = "GodZilaa"
+
+            function displayInner(){
+                console.log(name)
+            }
+            return displayInner;       ///returning inner function hence all the properties of outer fun will 
+        // aquire by innner
+        }
+
+        const executeObj = displayOuter();
+        executeObj()
+
+
+       
+    </script>
+</html>
